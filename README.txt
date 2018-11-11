@@ -17,7 +17,7 @@ app.get('/api/purchase', db.getPurchase);
 app.get('/api/purchase/:id', db.getPurchaseByID);
 app.post('/api/purchase', db.insertPurchase); {purchase_id,created_at,name,address,state,zipcode,user_id}
 app.put('/api/purchase/:id', db.updatePurchase); {created_at,name,address,state,zipcode,user_id}
-app.delete('/api/purchase/delete/:id', db.DeletePurchase);
+app.delete('/api/purchase/delete/:id', db.DeletePurchase);  //Problem from primary key and foreign key Update before delete
 //user
 app.get('/api/User', db.getUser);
 app.get('/api/User/:id', db.getUserByID);
